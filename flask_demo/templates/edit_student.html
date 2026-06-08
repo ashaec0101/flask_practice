@@ -1,0 +1,16 @@
+<h1>Edit Student</h1>
+
+<form method="POST" action="/students/edit/{{ student.id }}">
+    <label>Name:</label>
+    <input type="text" name="name" value="{{ student.name }}" required>
+    <br><br>
+
+    <label>Course:</label>
+    <input type="text" name="course" value="{{ student.course }}" required>
+    <br><br>
+
+    <button type="submit">Update Student</button>
+</form>
+
+<br>
+<a href="/students">Back</a>

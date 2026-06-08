@@ -1,0 +1,20 @@
+<h1>Students</h1>
+
+<a href="/students/new">Add New Student</a>
+
+<ul>
+{% for student in students %}
+    <li>
+        <b>{{ student.name }}</b> - {{ student.course }}
+
+        <a href="/students/edit/{{ student.id }}">Edit</a>
+
+        <form action="/students/delete/{{ student.id }}" method="POST" style="display:inline;">
+            <button type="submit">Delete</button>
+        </form>
+    </li>
+{% endfor %}
+</ul>
+
+<br>
+<a href="/">Back Home</a>
