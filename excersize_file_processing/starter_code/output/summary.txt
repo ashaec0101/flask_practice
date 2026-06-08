@@ -1,0 +1,5 @@
+rows=4
+grand_total=272.0
+average_line_revenue=68.0
+top_sku=C303
+top_line_revenue=100.0
